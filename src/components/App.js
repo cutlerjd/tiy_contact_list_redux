@@ -19,7 +19,6 @@ class App extends Component {
       <MuiThemeProvider>
       <Provider store={store}>
       <div className="container">
-      <h3>base app</h3> {/* Remove later */}
         <Router>
         <Switch>
           <Route exact path="/" component={ContactList}/>
