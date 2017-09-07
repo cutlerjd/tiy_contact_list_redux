@@ -14,6 +14,21 @@ String.prototype.capitalize = function() {
 
 class ContactDetail extends Component {
 
+    static defaultProps = {
+        user: {
+            name: {
+                first: '',
+                last: '',
+            },
+            cell: '',
+            email:'',
+            picture: {
+                'thumbnail':'',
+                'large':''
+            }
+        }
+    }
+
     render() {
         console.log(this.props.user)
         return (
